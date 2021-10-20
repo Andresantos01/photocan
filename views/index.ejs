@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/indexStyle.css">
+    <title><%= title%></title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <div class="login">
+                <div class="userName"><%= user %></div>
+                <a href="/login" class="loginButton">Entrar</a>
+            </div>
+        </div>
+    </header>
+    <div class="bodyContainer">
+            <form class="find">
+                <input type="text" id="hashtag" name="hashtag" placeholder="#HashTag">
+                <button onclick="teste()" type="submit">Procurar</button>
+            </form>
+            <div class="line"></div>
+            <div class="galery">Galeria</div>
+            <div class="line"></div>
+
+            <div id="images">
+                <img src="https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/e35/245537377_404136151319576_9003113603766393139_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=R3GzEa-UmegAX_fiIJ5&edm=ABZsPhsBAAAA&ccb=7-4&oh=1e452a0150b4aa826656b701d94bdb05&oe=617572C4&_nc_sid=4efc9f&ig_cache_key=MjY4NjA2ODIzNDY4MTgyODMxMQ%3D%3D.2-ccb7-4" alt="">
+            </div>
+    </div>
+
+    <footer>
+        PhotoCan
+    </footer>
+
+    <script type="module" src="/scripts/index.js"></script>
+</body>
+
+</html>
