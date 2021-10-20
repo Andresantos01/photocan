@@ -162,7 +162,7 @@ header .container {
     border: 2px solid transparent; 
   }
 
-#images img{
+#images img, video{
     margin: 15px;
     width: 250px;
     height: 200px;

@@ -10858,29 +10858,30 @@ var obj = {
 
 fotos()
 function fotos() {
-  //Object target of forEach API
-  Object.keys(obj).forEach(index =>{
-    //Foreach Object Instagram 
-    obj.data.recent.sections.forEach(i =>
-    {
-    //Get username api
-     var username = i.layout_content.medias[0].media.user.username;
-    console.log('NOME: '+ username);
+  // //Object target of forEach API
+  // Object.keys(obj).forEach(index =>{
+  //   //Foreach Object Instagram 
+  //   obj.data.recent.sections.forEach(i =>
+  //   {
+  //   //Get username api
+  //    var username = i.layout_content.medias[0].media.user.username;
+  //   console.log('NOME: '+ username);
   
-    //Get codeImages of users 
-    var codeImages  = i.layout_content.medias[0].media.code + ' | ';
-    console.log('CÓDIGO: '+ codeImages);
+  //   //Get codeImages of users 
+  //   var codeImages  = i.layout_content.medias[0].media.code + ' | ';
+  //   console.log('CÓDIGO: '+ codeImages);
     
-    //Get Unique ID of media array
-    var idMedia = i.layout_content.medias[0].media.id + ' | ';
-    //console.log(urlIamges);
-    //Show dados in container front
+  //   //Get Unique ID of media array
+  //   var idMedia = i.layout_content.medias[0].media.id + ' | ';
+  //   //console.log(urlIamges);
+  //   //Show dados in container front
     
-    var urlImages = i.layout_content.medias[0].media.image_versions2.candidates[0].url;
-        console.log('URL IMG: ' + urlImages);
-    });
+  //   var urlImages = i.layout_content.medias[0].media.image_versions2.candidates[0].url;
+  //       console.log('URL IMG: ' + urlImages);
+  //   });
 
-   });
+   //}//);
+
 }
 
 
