@@ -1,0 +1,186 @@
+/* Selector Global Elementes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #E8F1F2;
+    height: 100%;
+}
+
+/* Cores::after
+
+    Escuro para mais claro
+    #13293D
+    #006494
+    #247BA0
+    #1B98E0
+    #E8F1F2
+
+*/
+
+header{
+    background-color: #1B98E0;
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+}
+
+header .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    background-image: url("/img/logo_photocan_centralizado_branco-min.png");
+    width: 100px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.login{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.userName{
+    width: 150px;
+    height: 100%;
+    line-height: 90px;
+    color: white;
+    font-weight: bolder;
+}
+
+.loginButton{
+    margin-top: 27px;
+    width: 150px;
+    height: 100%;
+    background-color: #006494;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.loginButton:hover{
+    background-color: #13293D;
+    transition: 0.5s;
+}
+
+
+.bodyContainer{
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: calc(100vh - 90px - 35px);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.find{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 65px;
+    background-color: #b0ddf7;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 auto 10px;
+}
+
+.find input{
+    width: 200px;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.find button{
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1B98E0;
+    color: white;
+    font-weight: bolder;
+}
+
+.find button:hover{
+    background-color: #006494;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #1B98E0;
+}
+
+.galery{
+    color: #1B98E0;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+}
+
+#images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+}
+
+#images::-webkit-scrollbar {    
+    width: 12px;             
+  }
+  #images::-webkit-scrollbar-track {
+    background: #b0ddf7;        
+  }
+  #images::-webkit-scrollbar-thumb {
+    background-color: #006494;    
+    border-radius: 20px;       
+    border: 2px solid transparent; 
+  }
+
+#images img{
+    margin: 15px;
+    width: 250px;
+    height: 200px;
+    box-shadow: -3px 5px 20px 1px #65b4e2;
+}
+
+footer{
+    width: 100%;
+    height: 35px;
+    background-color: #1B98E0;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    font-weight: bolder;
+}
+
+@media screen and (max-height: 768px){
+    #images{
+        height: 58vh;
+    }
+}
