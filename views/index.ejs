@@ -22,7 +22,7 @@
     <div class="bodyContainer">
             <form class="find">
                 <input type="text" id="hashtag" name="hashtag" placeholder="#HashTag">
-                <button onclick="teste()" type="submit">Procurar</button>
+                <button id="find" type="submit">Procurar</button>
             </form>
             <div class="line"></div>
            
@@ -44,7 +44,7 @@
    
     <script>
         $(()=>{
-            const token ='IGQVJVUENsemdCRlJfMkc1LTFoOHlySnRBb0RrdHp4STZAMZA2VVX05YOUh6SkViZA1NsU0FBeUd0bldBZA2pVbVhqRkMwX040NVZAFSVlyRDdIOGRocUlWWDAtVzRkSVhBeTdGRjRzRDd4bU9YYldLUGloUQZDZD';
+            const token ='IGQVJXRXhLZAXkyME1rRDdOMU1SYkdteFFrZAnNiSzdwbU91RXZAxRXMtYkZAnNGpwYmNTNnB0aURRdFFrRDNLTFlySmVNM3MxYmF3RDBZAT1pWQ3B1dWFSZA3ZAYZAy00cF9BeExiY1EyLWtvMkJBWTV6R2ZAVMAZDZD';
             const url = 'https://graph.instagram.com/me/media?access_token=' + token + '&fields=media_url,media_type,caption,permalink, next, previous';
             
             $.get(url).then((response)=>{
